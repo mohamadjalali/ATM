@@ -80,7 +80,7 @@ Confirmation = namedtuple('Confirmation', 'account_number transaction_code trans
 
 class Transaction_Code(Enum):
 
-    DEPOSIT = 'D',
+    DEPOSIT  = 'D',
     WITHDRAW = 'W',
     INTEREST = 'I',
     REJECTED = 'X'
@@ -353,4 +353,3 @@ class TestAccount(unittest.TestCase):
         self.assertEqual(self.balance, a.balance)
 
 run_tests(TestAccount)
-
